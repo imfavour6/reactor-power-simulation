@@ -21,25 +21,41 @@ This project combines concepts from Nuclear Engineering and Data Science using c
 
 ## Technologies
 
+
 - Python
 - Jupyter Notebook
-- NumPy
 - Pandas
 - Matplotlib
 - Git
 - GitHub
-
+- Visual Studio Code
 ---
 
 ## Project Workflow
 
-Physics Model → Simulation → Data Collection → Analysis → Visualization → Engineering Insights
-
+Physics Model
+      ↓
+Time-Step Simulation
+      ↓
+Data Collection (Pandas)
+      ↓
+Visualization (Matplotlib)
+      ↓
+Engineering Analysis
 ---
 
 ## Current Status
 
-🚧 In Progress
+🚧 Active Development
+
+Current milestone:
+- Constant reactivity simulation completed
+- Data collection completed
+- Visualization completed
+
+Next milestone:
+- Time-dependent reactivity
+- Control rod model
 
 ### Planned Features
 
@@ -50,16 +66,37 @@ Physics Model → Simulation → Data Collection → Analysis → Visualization 
 - [ ] Data analysis
 - [ ] Interactive visualizations
 
----
 
+---
+## Current Features
+
+- Constant reactivity simulation
+- Neutron population time stepping
+- Adjustable simulation time step
+- Simulation history stored in Python lists
+- Results organized using Pandas
+- Results exported to CSV
+- Neutron population visualization using Matplotlib
+---
+## Current Results
+
+The first milestone of the project models neutron population growth under constant positive reactivity. The simulation stores results in a Pandas DataFrame and visualizes the behavior using Matplotlib.
+
+##   Reactivity Simulation Output
+
+The graph below shows how the neutron population changes over time under constant positive reactivity.
+
+![Neutron Population vs. Time](images/neutron_population.png)
 ## Repository Structure
 
-```
+```text
 reactor-power-simulation/
-│
-├── notebooks/
 ├── data/
+│   └── simulation_results.csv
 ├── images/
+│   └── neutron_population.png
+├── notebooks/
+│   └── reactor-sim.ipynb
 ├── src/
 └── README.md
 ```
@@ -68,8 +105,12 @@ reactor-power-simulation/
 
 ## Author
 
-Favour Olawole
-
-Nuclear, Plasma and Radiological Engineering + Data Science
+**Favour Olawole**
 
 University of Illinois Urbana-Champaign
+
+Interests:
+- Nuclear Engineering
+- Reactor Physics
+- Computational Modeling
+- Data Science
