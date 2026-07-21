@@ -82,7 +82,7 @@ Next milestone:
 
 The first milestone of the project models neutron population growth under constant positive reactivity. The simulation stores results in a Pandas DataFrame and visualizes the behavior using Matplotlib.
 
-##   Reactivity Simulation Output
+##   Constant Reactivity Simulation Output
 
 The graph below shows how the neutron population changes over time under constant positive reactivity.
 
